@@ -206,5 +206,3 @@ ESP32-C3-tecladinho/       Protótipo do firmware
 ## Contexto acadêmico
 
 Projeto Integrador do 4º período de Análise e Desenvolvimento de Sistemas da Faculdade SENAC.
-
-**Equipe:** Andrew Kauê, Josué Oliveira, Luiz Miguel, Maria Eduarda, Matheus Ferreira, Victor Sette e Vinicius Cândido.
