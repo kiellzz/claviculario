@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "author": "Maverick",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-c3-devkitm-1",
+      "id": "esp",
+      "top": -454.69,
+      "left": 262.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -824.35,
+      "left": 162.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -444.26,
+      "left": 414.36,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -484.5,
+      "left": 74.1,
+      "rotate": 270,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -380.49,
+      "left": 88.44,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -368.4,
+      "left": 3.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -250.19,
+      "left": 181.17,
+      "rotate": 180,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -210,
+      "left": 181.17,
+      "rotate": 180,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "A",
+      "top": -772.62,
+      "left": 404.66,
+      "attrs": { "text": "<------- Set Alarm" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "C",
+      "top": -666.01,
+      "left": 405.29,
+      "attrs": { "text": "<------- Set Clock" }
+    },
+    { "type": "wokwi-text", "id": "|1", "top": -578.59, "left": 322.96, "attrs": { "text": "|" } },
+    { "type": "wokwi-text", "id": "^1", "top": -581.3, "left": 321.71, "attrs": { "text": "^" } },
+    {
+      "type": "wokwi-text",
+      "id": "#",
+      "top": -572.97,
+      "left": 326.2,
+      "attrs": { "text": "------------------------------ Submit / Silence Alarm" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "*",
+      "top": -572.62,
+      "left": 22.16,
+      "attrs": { "text": "Erase / Snooze-----------------" }
+    },
+    { "type": "wokwi-text", "id": "^2", "top": -580.39, "left": 206.9, "attrs": { "text": "^" } },
+    { "type": "wokwi-text", "id": "|2", "top": -579.17, "left": 208.11, "attrs": { "text": "|" } }
+  ],
+  "connections": [
+    [ "esp:1", "keypad1:C1", "cyan", [ "v-18.48", "h15.7" ] ],
+    [ "esp:0", "keypad1:C2", "yellow", [ "v-9.6", "h10.51" ] ],
+    [ "esp:3", "keypad1:C3", "limegreen", [ "v-9.59", "h-13.05" ] ],
+    [ "esp:2", "keypad1:C4", "magenta", [ "v-18.48", "h-12.9" ] ],
+    [ "esp:4", "keypad1:R1", "#8f4814", [ "v7.96", "h-84.23", "v-144.63", "h71.03" ] ],
+    [ "esp:5", "keypad1:R2", "orange", [ "v14.55", "h-87.01", "v-144.5", "h74.21" ] ],
+    [ "esp:6", "keypad1:R3", "green", [ "v20.84", "h-89.17", "v-143.71", "h76.27" ] ],
+    [ "esp:7", "keypad1:R4", "purple", [ "v27.13", "h-91.33", "v-143.27", "h78.33" ] ],
+    [ "lcd1:GND", "esp:GND.1", "black", [ "h-11.48", "v-27.23", "h-35.28" ] ],
+    [ "lcd1:VCC", "esp:3V3.1", "red", [ "h-18.59", "v-30.7", "h-37.77" ] ],
+    [ "lcd1:SCL", "esp:19", "limegreen", [ "h-10.71", "v117.57", "h-160.66", "v-62.9" ] ],
+    [ "lcd1:SDA", "esp:18", "cyan", [ "h-19.02", "v119.09", "h-142.94" ] ],
+    [ "led1:A", "esp:8", "gray", [ "v80.81", "h210.16" ] ],
+    [ "led1:C", "r1:2", "black", [ "v93.24", "h119.4" ] ],
+    [ "esp:GND.8", "r1:1", "black", [ "v0" ] ],
+    [ "led2:A", "esp:9", "blue", [ "v50.0", "h210.0" ] ],
+    [ "led2:C", "r2:2", "black", [ "v50.0", "h119.0" ] ],
+    [ "esp:GND.8", "r2:1", "black", [ "v0" ] ],
+    [ "esp:10", "bz1:2", "white", [ "v-19.85", "h-127.94" ] ],
+    [ "bz1:1", "esp:GND.4", "black", [ "h7.46", "v-0.31", "h107.6" ] ]
+  ],
+  "dependencies": {}
+}

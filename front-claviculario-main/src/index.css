@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores baseadas nas imagens do Figma */
+  --color-senac-blue: #1650a7;
+  --color-senac-blue-title: #002d71;
+  --color-senac-orange: #f28b24;
+  --color-background-light: #f4f6f8;
+}
+
+/* O reset à prova de bala usando o asterisco (*) */
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--color-background-light);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sireneVermelha {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
+    background-color: #fee2e2; /* bg-red-100 */
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(220, 38, 38, 1);
+    background-color: #fca5a5; /* bg-red-300 */
+  }
+}
+
+.animate-sirene {
+  /* 0.6s deixa o piscar bem rápido e urgente */
+  animation: sireneVermelha 0.6s ease-in-out infinite;
+}
+
+@layer components {
+  .form-input {
+    @apply mt-1 w-full rounded-xl border border-transparent bg-gray-100 px-4 py-3 font-normal text-gray-700 outline-none transition-all focus:border-senac-blue focus:bg-white focus:ring-2 focus:ring-blue-100;
+  }
+}
