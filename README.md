@@ -13,7 +13,7 @@ Substituir o controle manual de chaves por uma solução segura, rastreável e d
 - Acesso restrito conforme papel, timetable e autorizações temporárias.
 - Localização organizada das chaves e acompanhamento remoto pelo dashboard.
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-F59E0B)
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-16A34A)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)
 ![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-3.16-A30000?logo=django&logoColor=white)
