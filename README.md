@@ -27,6 +27,10 @@ Substituir o controle manual de chaves por uma solução segura, rastreável e d
 ![ESP32](https://img.shields.io/badge/Hardware-ESP32-E7352C?logo=espressif&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Firmware-Arduino-00878F?logo=arduino&logoColor=white)
 
+## Deploy
+
+Acesse a versão publicada do dashboard em: [http://claviculariosenac.duckdns.org/](http://claviculariosenac.duckdns.org/)
+
 ## Stack
 
 | Camada | Tecnologias |
