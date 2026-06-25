@@ -1,4 +1,4 @@
-# 📚 Documentação Técnica: Front-end Claviculário Inteligente
+# 📚 Documentação Técnica: Claviculário Inteligente
 
 ## 1. Visão Geral do Projeto
 Este repositório contém o módulo Front-end (Interface de Usuário) do sistema de gerenciamento de chaves (Claviculário Inteligente). O objetivo principal desta camada é fornecer uma experiência fluida, responsiva e em tempo real para o controle de acesso, integrando-se via API REST ao Back-end (Django).
